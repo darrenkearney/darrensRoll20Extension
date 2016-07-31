@@ -1,0 +1,23 @@
+/**
+ * Created by darren on 30/07/16.
+ */
+{
+
+    "manifest_version": 2,
+    "name": "Darren's Roll20 Extension",
+    "version": "0.0.1",
+
+    "description": "Adds some custom stuff for our game on roll20.net.",
+
+    "content_scripts": [
+    {
+        "matches": ["*://*.roll20.net/*"],
+        "js": ["message.js"]
+    }
+    ],
+
+    "permissions": [
+        "activeTab"
+    ],
+
+}
